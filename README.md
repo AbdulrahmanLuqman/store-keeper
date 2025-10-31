@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# Store Keeper 📦
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Store Keeper is a sleek and efficient mobile inventory management application built with React Native and Expo. It allows users to effortlessly track products by adding, editing, and deleting items, complete with images captured directly from the device's camera. All data is stored locally using SQLite, ensuring your inventory is always accessible, even offline.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+-   **Product Management**: Full CRUD (Create, Read, Update, Delete) functionality for your inventory items.
+-   **Image Capture**: Use the device's camera to add photos to each product for easy identification.
+-   **Local Database**: Utilizes Expo-SQLite for persistent local storage, making the app fast and offline-capable.
+-   **Modern UI**: A clean, intuitive, and responsive user interface built with modern React Native components.
+-   **Tab-Based Navigation**: Simple navigation powered by Expo Router for a seamless user experience.
+-   **Centralized State**: Manages application state effectively using React Context API.
 
-   ```bash
-   npm install
-   ```
+## 🚀 Getting Started
 
-2. Start the app
+Follow these instructions to get the project up and running on your local machine for development and testing.
 
-   ```bash
-   npx expo start
-   ```
+### Prerequisites
 
-In the output, you'll find options to open the app in a
+-   Node.js (LTS version recommended)
+-   Git
+-   Expo Go app on your physical device or an Android/iOS simulator
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Installation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/store-keeper.git
+    ```
 
-## Get a fresh project
+2.  **Navigate to the project directory**:
+    ```bash
+    cd store-keeper
+    ```
 
-When you're ready, run:
+3.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+    or if you use Yarn:
+    ```bash
+    yarn install
+    ```
 
-```bash
-npm run reset-project
-```
+4.  **Run the application**:
+    ```bash
+    npx expo start
+    ```
+    This will start the Metro bundler. You can then scan the QR code with the Expo Go app on your phone or run it on a simulator by pressing `a` for Android or `i` for iOS.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📱 Usage
 
-## Learn more
+Once the application is running, you can start managing your inventory:
 
-To learn more about developing your project with Expo, look at the following resources:
+1.  **View Products**: The home screen ("Products" tab) displays a list of all your current inventory items. If it's your first time, this screen will be empty.
+2.  **Add a New Product**:
+    -   Navigate to the "Add Products" tab.
+    -   Tap the "Add Photo" placeholder to open the camera and take a picture of your product.
+    -   Fill in the product name, quantity, and price.
+    -   Click "Save" to add the item to your inventory.
+3.  **Edit or Delete a Product**:
+    -   From the "Products" list, find the item you wish to modify.
+    -   Tap the **edit** icon (pencil) to open the form with the product's current details. Make your changes and tap "Update".
+    -   Tap the **delete** icon (trash can) to permanently remove the product from your inventory.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🛠️ Technologies Used
 
-## Join the community
+| Technology         | Description                                     |
+| ------------------ | ----------------------------------------------- |
+| **React Native**   | A framework for building native mobile apps.    |
+| **Expo**           | A platform for making universal React apps.     |
+| **TypeScript**     | A typed superset of JavaScript.                 |
+| **Expo Router**    | File-based routing for React Native apps.       |
+| **Expo SQLite**    | Provides access to a local SQLite database.     |
+| **Expo Camera**    | Enables camera access for capturing photos.     |
+| **React Context**  | For managing global state across the app.       |
 
-Join our community of developers creating universal apps.
+## 📄 License
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is configured as private in `package.json` and does not have an open-source license.
+
+## 👤 Author
+
+Connect with me on social media!
+
+-   **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-username)
+-   **Twitter / X**: [@your-handle](https://x.com/your-handle)
+
+---
+
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+[![Readme was generated by Dokugen](https://img.shields.io/badge/Readme%20was%20generated%20by-Dokugen-brightgreen)](https://www.npmjs.com/package/dokugen)
